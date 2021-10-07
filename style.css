@@ -5,6 +5,14 @@ body {
   overflow-x: hidden;
   color: hsl(0, 0%, 100%);
 }
+.light-mode {
+  background-color: hsl(225, 100%, 98%) !important;
+  color: hsl(230, 17%, 14%);
+}
+.light-mode-card {
+  background-color: hsl(227, 47%, 96%) !important;
+}
+
 .header {
   background-color: hsl(232, 19%, 15%);
   display: flex;
@@ -25,12 +33,19 @@ body {
 .upper__subtitle {
   color: hsl(228, 34%, 66%);
 }
+
 .switch {
   margin-right: 500px;
   position: relative;
   display: inline-block;
   width: 70px;
   height: 35px;
+  background-image: linear-gradient(
+    90deg,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  border-radius: 34px;
 }
 /* Hide default HTML checkbox */
 .switch input {
@@ -47,11 +62,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(
-    90deg,
-    hsl(210, 78%, 56%),
-    hsl(146, 68%, 55%)
-  );
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -63,17 +73,17 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: hsl(230, 17%, 14%);
+  background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: hsl(230, 22%, 74%);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px hsl(230, 22%, 74%);
 }
 
 input:checked + .slider:before {
@@ -129,6 +139,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   font-size: 14px;
+  font-weight: 700;
 }
 
 .main__social-logo {
@@ -222,6 +233,7 @@ input:checked + .slider:before {
   right: 20px;
   display: flex;
   align-items: center;
+  font-weight: 700;
 }
 .lower__tendance-img {
   margin-right: 5px;
