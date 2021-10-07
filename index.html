@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./script.js"></script>
+    <header class="header">
+      <section class="upper">
+        <div class="upper__left">
+          <h1 class="upper__title">Social Media Dashboard</h1>
+          <p class="upper__subtitle">Total Followers: 23,004</p>
+        </div>
+        <div class="upper__right">
+          <span class="upper__mode">Dark mode</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </section>
+      <section class="main">
+        <div class="main__container --facebook">
+          <div class="main__social">
+            <span class="main__username">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="social icon"
+                class="main__social-logo"
+              />@nathanf</span
+            >
+            <p class="main__follow">1987</p>
+            <p class="main__label">Followers</p>
+            <span class="main__number-today --green"
+              ><img
+                src="./images/icon-up.svg"
+                alt="flow icon"
+                class="main__tendance"
+              />12 Today</span
+            >
+          </div>
+        </div>
+
+        <div class="main__container --twitter">
+          <div class="main__social">
+            <span class="main__username"
+              ><img
+                src="./images/icon-twitter.svg"
+                alt="social icon"
+                class="main__social-logo"
+              />@nathanf</span
+            >
+            <p class="main__follow">1044</p>
+            <p class="main__label">Followers</p>
+            <span class="main__number-today --green"
+              ><img
+                src="./images/icon-up.svg"
+                alt="flow icon"
+                class="main__tendance"
+              />99 Today</span
+            >
+          </div>
+        </div>
+        <div class="main__container --instagram">
+          <div class="main__social">
+            <span class="main__username"
+              ><img
+                src="./images/icon-instagram.svg"
+                alt="social icon"
+                class="main__social-logo"
+              />@realnathanf</span
+            >
+            <p class="main__follow">11k</p>
+            <p class="main__label">Followers</p>
+            <span class="main__number-today --green"
+              ><img
+                src="./images/icon-up.svg"
+                alt="flow icon"
+                class="main__tendance"
+              />1099 Today</span
+            >
+          </div>
+        </div>
+
+        <div class="main__container --youtube">
+          <div class="main__social">
+            <span class="main__username"
+              ><img
+                src="./images/icon-youtube.svg"
+                alt="social icon"
+                class="main__social-logo"
+              />Nathan F.</span
+            >
+            <p class="main__follow">8239</p>
+            <p class="main__label">Subscribers</p>
+            <span class="main__number-today --red"
+              ><img
+                src="./images/icon-down.svg"
+                alt="flow icon"
+                class="main__tendance"
+              />144 Today</span
+            >
+          </div>
+        </div>
+      </section>
+      <h2 class="lower__title">Overview - Today</h2>
+    </header>
+
+    <section class="lower">
+      <div class="lower__card">
+        <p class="lower__social-label">Page Views</p>
+        <img
+          src="./images/icon-facebook.svg"
+          alt="social icon"
+          class="lower__social-icon"
+        />
+        <p class="lower__number">87</p>
+        <div class="lower__tendance --green">
+          <img
+            src="./images/icon-up.svg"
+            alt="flow icon"
+            class="lower__tendance-img"
+          /><span class="lower__tendance-number">3%</span>
+        </div>
+      </div>
+      <div class="lower__card">
+        <p class="lower__social-label">Likes</p>
+        <img
+          src="./images/icon-facebook.svg"
+          alt="social icon"
+          class="lower__social-icon"
+        />
+        <p class="lower__number">52</p>
+        <div class="lower__tendance --red">
+          <img
+            src="./images/icon-down.svg"
+            alt="flow icon"
+            class="lower__tendance-img"
+          /><span class="lower__tendance-number">2%</span>
+        </div>
+      </div>
+      <div class="lower__card">
+        <p class="lower__social-label">Likes</p>
+        <img
+          src="./images/icon-instagram.svg"
+          alt="social icon"
+          class="lower__social-icon"
+        />
+        <p class="lower__number">5462</p>
+        <div class="lower__tendance --green">
+          <img
+            src="./images/icon-up.svg"
+            alt="flow icon"
+            class="lower__tendance-img"
+          /><span class="lower__tendance-number">2257%</span>
+        </div>
+      </div>
+      <div class="lower__card">
+        <p class="lower__social-label">Profile Views</p>
+        <img
+          src="./images/icon-instagram.svg"
+          alt="social icon"
+          class="lower__social-icon"
+        />
+        <p class="lower__number">52k</p>
+        <div class="lower__tendance">
+          <img
+            src="./images/icon-up.svg"
+            alt="flow icon"
+            class="lower__tendance-img"
+          /><span class="lower__tendance-number --green">1375%</span>
+        </div>
+      </div>
+      <section class="lower__card-2">
+        <div class="lower__card">
+          <p class="lower__social-label">Retweets</p>
+          <img
+            src="./images/icon-twitter.svg"
+            alt="social icon"
+            class="lower__social-icon"
+          />
+          <p class="lower__number">117</p>
+          <div class="lower__tendance --green">
+            <img
+              src="./images/icon-up.svg"
+              alt="flow icon"
+              class="lower__tendance-img"
+            /><span class="lower__tendance-number">303%</span>
+          </div>
+        </div>
+        <div class="lower__card">
+          <p class="lower__social-label">Likes</p>
+          <img
+            src="./images/icon-twitter.svg"
+            alt="social icon"
+            class="lower__social-icon"
+          />
+          <p class="lower__number">507</p>
+          <div class="lower__tendance --green">
+            <img
+              src="./images/icon-up.svg"
+              alt="flow icon"
+              class="lower__tendance-img"
+            /><span class="lower__tendance-number">553%</span>
+          </div>
+        </div>
+        <div class="lower__card">
+          <p class="lower__social-label">Likes</p>
+          <img
+            src="./images/icon-youtube.svg"
+            alt="social icon"
+            class="lower__social-icon"
+          />
+          <p class="lower__number">107</p>
+          <div class="lower__tendance --red">
+            <img
+              src="./images/icon-down.svg"
+              alt="flow icon"
+              class="lower__tendance-img"
+            /><span class="lower__tendance-number">19%</span>
+          </div>
+        </div>
+        <div class="lower__card">
+          <p class="lower__social-label">Total Views</p>
+          <img
+            src="./images/icon-youtube.svg"
+            alt="social icon"
+            class="lower__social-icon"
+          />
+          <p class="lower__number">1407</p>
+          <div class="lower__tendance --red">
+            <img
+              src="./images/icon-down.svg"
+              alt="flow icon"
+              class="lower__tendance-img"
+            /><span class="lower__tendance-number">12%</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  color: hsl(0, 0%, 100%);
+}
+.header {
+  background-color: hsl(232, 19%, 15%);
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 250px;
+  width: 100%;
+}
+.upper__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.upper__subtitle {
+  color: hsl(228, 34%, 66%);
+}
+.switch {
+  margin-right: 500px;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    90deg,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: hsl(230, 17%, 14%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.upper__right {
+  display: flex;
+  align-items: center;
+}
+.upper__mode {
+  margin-right: 10px;
+  color: hsl(228, 34%, 66%);
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 250px;
+}
+.main__container {
+  border-radius: 5px;
+  width: 24%;
+  height: 250px;
+  padding-top: 5px;
+}
+.main__social {
+  background-color: hsl(228, 28%, 20%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main__username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(228, 34%, 66%);
+  font-size: 14px;
+}
+.main__number-today {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.main__social-logo {
+  width: 20px;
+  margin-right: 5px;
+}
+.main__tendance {
+  width: 10px;
+  margin-right: 5px;
+}
+.main__follow {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.main__label {
+  text-transform: uppercase;
+  color: hsl(228, 34%, 66%);
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-top: -40px;
+}
+.--facebook {
+  background-color: hsl(208, 92%, 53%);
+}
+.--twitter {
+  background-color: hsl(203, 89%, 53%);
+}
+.--instagram {
+  background-image: linear-gradient(
+    90deg,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+}
+.--youtube {
+  background-color: hsl(348, 97%, 39%);
+}
+.--green {
+  color: hsl(163, 72%, 41%);
+}
+.--red {
+  color: hsl(356, 69%, 56%);
+}
+.lower {
+  background-color: hsl(230, 17%, 14%);
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 700px;
+  padding: 190px 250px;
+  column-gap: 20px;
+}
+
+.lower__card-2 {
+  background-color: hsl(230, 17%, 14%);
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 700px;
+  padding: 15px 0;
+  column-gap: 20px;
+}
+.lower__card {
+  width: 341px;
+  border-radius: 7px;
+  height: 120px;
+  background-color: hsl(228, 28%, 20%);
+  position: relative;
+}
+.lower__social-label {
+  color: hsl(228, 34%, 66%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.lower__social-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.lower__number {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.lower__tendance {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+.lower__tendance-img {
+  margin-right: 5px;
+}
+.lower__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 250px;
+  margin-top: 25px;
+}
